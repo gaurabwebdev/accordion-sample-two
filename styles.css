@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.primary-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+}
+
+.single-list {
+  margin-left: 2rem;
+}
+
+.single-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.bottom-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.referral-container {
+  width: 30%;
+}
+
+.accordion-container {
+  width: 70%;
+  margin: 1rem;
+  padding: 2rem;
+  border: 0.15rem solid #bebbbb;
+  border-radius: 0.25rem;
+}
+
+.accordion-container div:last-child {
+  border-bottom: none !important;
+}
+
+.referral-info {
+  margin: 0 0 0 0.5rem;
+}
+
+.referral-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.15rem solid #bebbbb;
+}
+
+.referral-info div:nth-child(1) {
+  border-top: 0.15rem solid #bebbbb;
+}
+
+.accordion-item {
+  border-bottom: 0.1rem solid #bebbbb;
+  padding: 1rem;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-title p {
+  font-size: 1.25rem;
+}
+
+span.accordion-icon {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-content {
+  display: none;
+  margin: 1rem 0 1rem 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.accordion-offer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion-offer-section div:nth-child(1) {
+  width: 20%;
+  height: 5rem;
+}
+
+.accordion-offer-section div:nth-child(2) {
+  width: 80%;
+}
+
+.primary-btn {
+  padding: 1rem 1.5rem;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.share-btn {
+  margin: 1rem 0 !important;
+}
+
+.accordion-footer {
+  font-size: 1rem !important;
+}
+
+/* Media Query CSS */
+@media screen and (max-width: 768px) {
+  .accordion-container {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .bottom-part {
+    flex-direction: column;
+  }
+
+  .referral-container,
+  .accordion-container {
+    width: 100%;
+  }
+
+  .accordion-offer-section {
+    flex-direction: column;
+  }
+
+  .accordion-offer-section div:nth-child(1) {
+    width: 100%;
+  }
+
+  .accordion-offer-section div:nth-child(2) {
+    width: 100%;
+  }
+}
