@@ -43,7 +43,7 @@ body {
   width: 30%;
 }
 
-.accordion-container {
+.refferral-accordion-container {
   width: 70%;
   margin: 1rem;
   padding: 2rem;
@@ -51,7 +51,7 @@ body {
   border-radius: 0.25rem;
 }
 
-.accordion-container div:last-child {
+.refferral-accordion-container div:last-child {
   border-bottom: none !important;
 }
 
@@ -87,13 +87,23 @@ body {
   font-size: 1.25rem;
 }
 
+.refferral-accordion-container .ac .ac-trigger::after {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.25rem;
+  border: 0.1rem solid #676565;
+  border-radius: 1.25rem;
+  border-width: 0.15rem;
+  color: #676565;
+}
+
 span.accordion-icon {
   display: flex;
   align-items: center;
 }
 
 .accordion-content {
-  display: none;
+  display: flex;
   margin: 1rem 0 1rem 1rem;
   flex-direction: column;
   gap: 1rem;
@@ -140,7 +150,7 @@ span.accordion-icon {
 
 /* Media Query CSS */
 @media screen and (max-width: 768px) {
-  .accordion-container {
+  .refferral-accordion-container {
     margin: 0;
     padding: 1rem;
   }
@@ -150,7 +160,7 @@ span.accordion-icon {
   }
 
   .referral-container,
-  .accordion-container {
+  .refferral-accordion-container {
     width: 100%;
   }
 
